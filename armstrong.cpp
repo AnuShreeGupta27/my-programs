@@ -10,7 +10,7 @@ int main(){
 
     while(num>0){
     n= num%10;
-    sum= sum+(n*n*n);
+    sum= sum+(n*n*n*n);
     num=num/10;
     }
 
