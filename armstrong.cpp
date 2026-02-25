@@ -8,10 +8,11 @@ int main(){
     cout<<"enter number:";
     cin>> num;
 
-    while(num>0)
+    while(num>0){
     n= num%10;
     sum= sum+(n*n*n);
     num=num/10;
+    }
 
 
     if(sum==a){
