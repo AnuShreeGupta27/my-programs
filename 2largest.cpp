@@ -8,9 +8,9 @@ int main(){
     for(int i=0; i<n; i++){
         cin>> arr[i];
     }
-    int INT_MIN;
-    int max= INT_MIN;
-    int second_largest= INT_MIN;
+    //int INT_MIN;
+    int max= 0;//INT_MIN;
+    int second_largest= 0;//INT_MIN;
 
     for (int i=0;i<n; i++){
         if (arr[i]>  max){
@@ -23,7 +23,7 @@ int main(){
     }
     cout<< "Largest = "<< max <<endl;
  
-    if (second_largest == INT_MIN)
+    if (second_largest == 0)  //IF ALL THE ELEMENTS ARE SAME
     cout<< "No second largest element";
     else{
         cout<<"Second largest = "<< second_largest << endl;
