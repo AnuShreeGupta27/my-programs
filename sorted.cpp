@@ -22,7 +22,7 @@ int main(){
 
 
     if(sorted)
-    cout<<"array is sorted";
+    cout<<"array is sorted";     
     else
     cout<<"array is not sorted";
 
