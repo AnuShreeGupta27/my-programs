@@ -20,5 +20,5 @@ class lrotatek{
 };
 int main(){
    int arr[7]={1,2,3,4,5,6,7};
-   lrotatek l(arr,7,3);
+   lrotatek l(arr,7,4);
 }
