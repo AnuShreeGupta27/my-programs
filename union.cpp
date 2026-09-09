@@ -30,10 +30,10 @@ int main(){
     int arr1[]= {7,8,9,6,3,4};
 
     Union p;
-    vector<int> Union= p.findUnion(arr, arr1, n, m);
+    vector<int> answer= p.findUnion(arr, arr1, n, m);
     cout<< "UNION of arr and arr1 is:" <<endl;
 
-    for(auto &val :Union)
+    for(auto &val :answer)
     cout<<val <<" ";
     return 0;
 }
