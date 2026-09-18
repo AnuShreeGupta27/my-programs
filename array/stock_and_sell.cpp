@@ -17,6 +17,7 @@ class Solution{
             }
 
             else{
+                 // Selling price - Buying price = Profit//
                 maxprofit=max(maxprofit, price-minprice);
             }
         }
