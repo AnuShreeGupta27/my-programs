@@ -1,0 +1,26 @@
+//Given two integers r and c, return the value at the rth row and cth column (1-indexed) in a Pascal's Triangle.//
+#include <iostream>
+#include <vector>
+ 
+using namespace std;
+
+class Solution{
+    public:
+    int element(int r, int c){
+        int ans=1;
+
+        int n= r-1;
+        int k= c-1;                            //instead of calculating the whole factorial, we can calculate it like:  //
+        for(int i=0; i<k; i++){               //C(n,k)= n/1 × (n-1)/2 × (n-2)/3 × ...//
+            ans= ans*(n-i);
+            ans=ans/(i+1);                      //4/1 × = 4 × 3 / 2//
+        return ans;                                   //= 6//
+        }
+    }
+};
+
+int main(){
+    Solution s;
+    int res= s.element(4,3);
+    cout<< res;
+}
